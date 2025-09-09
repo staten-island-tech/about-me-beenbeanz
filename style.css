@@ -1,4 +1,4 @@
-html, body, * {
+html, body, *:not(ul):not(ol){
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,7 +8,7 @@ body{
     background-color: antiquewhite;
 }
 #mainHeader{
-    font-size: 8rem;
+    font-size: 6rem;
     text-align: center;
 }
 #subHeader{
@@ -16,17 +16,34 @@ body{
     text-align: center;
 }
 li, #paragraph, #paragraphLink{
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
 }
 #imgContainer{
-    width: 20rem;
-    height: 20rem;
+    width: 50rem;
+    height: 50rem;
     margin: 1rem auto;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 #img{
-    border-radius: 5px;
+    border-radius: 20px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-top: 20px;
+}
+#ul, #ol{
+    text-align: center;
+    list-style-position: inside;
+}
+.listHeader{
+    font-size: 3rem;
+    text-align: center;
+}
+#paragraph{
+    margin: 25px;
+    max-width: 90%;
+}
+a{
+    color: red;
 }
